@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
 import 'widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,9 +15,9 @@ class HomeView extends StatelessWidget {
         centerTitle: false,
         title: Padding(
           padding: const EdgeInsets.only(left: 5),
-          child: SvgPicture.asset(
-            'assets/images/logo.svg',
-            height: 22,
+          child: Lottie.asset(
+            'assets/lotties/appbar_lottie.json',
+            height: 70,
           ),
         ),
         actions: [
