@@ -1,5 +1,5 @@
-import 'package:books_app/features/book_details/book_details_view.dart';
-import 'package:books_app/features/home/views/widgets/list_tile_book_info.dart';
+import 'package:books_app/features/book_details/presentation/views/book_details_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/list_tile_book_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';

@@ -11,10 +11,15 @@ class BookDetailsAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Icon(
-          Icons.close_rounded,
-          color: Colors.white,
-          size: 32,
+        GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.close_rounded,
+            color: Colors.white,
+            size: 32,
+          ),
         ),
         SvgPicture.asset(
           'assets/images/cart.svg',

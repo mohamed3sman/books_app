@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:books_app/features/home/views/home_view.dart';
+import 'package:books_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

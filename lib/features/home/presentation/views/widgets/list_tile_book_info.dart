@@ -1,5 +1,5 @@
 import 'package:books_app/core/app_styles.dart';
-import 'package:books_app/features/home/views/widgets/book_rating.dart';
+import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
 class ListTileBookInfo extends StatelessWidget {
