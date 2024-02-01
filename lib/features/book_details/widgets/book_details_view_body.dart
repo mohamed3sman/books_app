@@ -2,6 +2,7 @@ import 'package:books_app/core/app_styles.dart';
 import 'package:books_app/features/book_details/widgets/book_details_app_bar.dart';
 import 'package:books_app/features/book_details/widgets/book_price_and_preview.dart';
 import 'package:books_app/features/home/views/widgets/book_rating.dart';
+import 'package:books_app/features/home/views/widgets/suggested_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -43,6 +44,21 @@ class BookDetailsViewBody extends StatelessWidget {
             height: 37,
           ),
           const BookPriceAndPreview(),
+          const SizedBox(
+            height: 50,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'You can also like',
+                  style: AppStyles.styleSemiBold20,
+                ),
+                const SuggestedBooksListView(),
+              ],
+            ),
+          ),
         ],
       ),
     );
