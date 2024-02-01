@@ -1,4 +1,5 @@
 import 'package:books_app/core/app_styles.dart';
+import 'package:books_app/features/home/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
 class ListTileBookInfo extends StatelessWidget {
@@ -38,25 +39,7 @@ class ListTileBookInfo extends StatelessWidget {
                 '19.99 €',
                 style: AppStyles.styleRegular20,
               ),
-              Row(
-                children: [
-                  const Icon(
-                    Icons.star_rounded,
-                    color: Color(0xffFFDD4F),
-                  ),
-                  Text(
-                    '4.8',
-                    style: AppStyles.styleMedium16,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    '(2390)',
-                    style: AppStyles.styleRegular14,
-                  ),
-                ],
-              )
+              const BookRating()
             ],
           ),
         ],
